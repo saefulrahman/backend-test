@@ -6,6 +6,7 @@ import { DatabaseConnectionService } from './shared/services/database-connection
 import { BookModule } from './book/book.module';
 import { MemberModule } from './member/member.module';
 import { RentModule } from './rent/rent.module';
+import { RentDetailModule } from './rent-detail/rent-detail.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { RentModule } from './rent/rent.module';
     BookModule,
     MemberModule,
     RentModule,
+    RentDetailModule,
   ],
   controllers: [AppController],
   providers: [AppService],
