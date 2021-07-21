@@ -8,12 +8,12 @@ async function bootstrap() {
   //API Docs Book
   const optionsBook = new DocumentBuilder().setTitle('Book CRUD').setDescription('The book API description').setVersion('1.0').addTag('book').build();
   const documentBook = SwaggerModule.createDocument(app, optionsBook);
-  SwaggerModule.setup('api/docs/book', app, documentBook);
+  SwaggerModule.setup('api/docs', app, documentBook);
 
-  //API Docs Member
-  const optionsMember = new DocumentBuilder().setTitle('Member CRUD').setDescription('The member API description').setVersion('1.0').addTag('member').build();
-  const documentMember = SwaggerModule.createDocument(app, optionsMember);
-  SwaggerModule.setup('api/docs/member', app, documentMember);
+  // //API Docs Member
+  // const optionsMember = new DocumentBuilder().setTitle('Member CRUD').setDescription('The member API description').setVersion('1.0').addTag('member').build();
+  // const documentMember = SwaggerModule.createDocument(app, optionsMember);
+  // SwaggerModule.setup('api/docs/member', app, documentMember);
 
   await app.listen(3000);
 }

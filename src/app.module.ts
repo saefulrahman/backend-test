@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { DatabaseConnectionService } from './shared/services/database-connection.service';
 import { BookModule } from './book/book.module';
 import { MemberModule } from './member/member.module';
+import { RentModule } from './rent/rent.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { MemberModule } from './member/member.module';
     }),
     BookModule,
     MemberModule,
+    RentModule,
   ],
   controllers: [AppController],
   providers: [AppService],

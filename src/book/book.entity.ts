@@ -1,7 +1,7 @@
 import { Entity, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity('books')
-export class BookEntity {
+export class Book {
   @Column({
     primary: true,
     length: 7,
