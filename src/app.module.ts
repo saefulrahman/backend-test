@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DatabaseConnectionService } from './shared/services/database-connection.service';
 import { BookModule } from './book/book.module';
+import { MemberModule } from './member/member.module';
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { BookModule } from './book/book.module';
       useClass: DatabaseConnectionService,
     }),
     BookModule,
+    MemberModule,
   ],
   controllers: [AppController],
   providers: [AppService],
