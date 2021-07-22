@@ -8,13 +8,21 @@ export class RentDetail {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ManyToOne(() => Rent, (id: Rent) => id)
-  @JoinColumn()
-  rent: Rent;
+  //   @ManyToOne(() => Rent, (id: Rent) => id)
+  //   @JoinColumn()
+  //   rent: Rent;
 
-  @ManyToOne(() => Book, (code: Book) => code)
-  @JoinColumn()
-  book: Book;
+  @Column()
+  id_rent: number;
+
+  //   @ManyToOne(() => Book, (code: Book) => code)
+  //   @JoinColumn()
+  //   book: Book;
+
+  @Column({
+    length: 7,
+  })
+  code_book: string;
 
   @Column()
   qty: number;

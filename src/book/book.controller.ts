@@ -11,6 +11,13 @@ import { CreateBookDto } from './book.dto';
   dto: {
     create: CreateBookDto,
   },
+  params: {
+    code: {
+      field: 'code',
+      type: 'string',
+      primary: true,
+    },
+  },
 })
 @Controller('book')
 export class BookController implements CrudController<Book> {

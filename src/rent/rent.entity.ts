@@ -7,9 +7,14 @@ export class Rent {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @OneToOne(() => Member)
-  @JoinColumn()
-  member: string;
+  // @OneToOne(() => Member)
+  // @JoinColumn()
+  // member: string;
+
+  @Column({
+    length: 4,
+  })
+  code_member: string;
 
   @Column()
   borrow_date: Date;

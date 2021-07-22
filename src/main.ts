@@ -10,7 +10,7 @@ async function bootstrap() {
   const documentBook = SwaggerModule.createDocument(app, optionsBook);
   SwaggerModule.setup('api/docs', app, documentBook);
 
-  // //API Docs Member
+  //API Docs Member
   // const optionsMember = new DocumentBuilder().setTitle('Member CRUD').setDescription('The member API description').setVersion('1.0').addTag('member').build();
   // const documentMember = SwaggerModule.createDocument(app, optionsMember);
   // SwaggerModule.setup('api/docs/member', app, documentMember);

@@ -11,6 +11,13 @@ import { CreateMemberDto } from './member.dto';
   dto: {
     create: CreateMemberDto,
   },
+  params: {
+    code: {
+      field: 'code',
+      type: 'string',
+      primary: true,
+    },
+  },
 })
 @Controller('member')
 export class MemberController implements CrudController<Member> {
